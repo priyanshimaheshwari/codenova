@@ -1,0 +1,43 @@
+trunk_cli_version: 1.20.1
+title: trufflehog parser timed out after 4963 seconds
+report:
+  - trufflehog parser timed out after 4963 seconds
+  - linter:
+      command: |
+        'C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827\trufflehog.exe' filesystem --json --fail --only-verified --no-update tsconfig.json
+      stdin_path: (none)
+      run_from: E:\projects\codecure\
+      timeout: 10m
+      rerun: (cd E:\projects\codecure\; env -i 'PATH=C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin' 'C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827\trufflehog.exe' filesystem --json --fail --only-verified --no-update tsconfig.json)
+      affects_cache:
+        []
+      direct_configs:
+        []
+      exit_status: exited
+      exit_code: 0
+      stdout: (none)
+      stderr: |
+        {"level":"info-0","ts":"2024-03-07T22:39:19+05:30","logger":"trufflehog","msg":"running source","source_manager_worker_id":"acTia","with_units":true}
+        {"level":"info-0","ts":"2024-03-07T22:39:20+05:30","logger":"trufflehog","msg":"finished scanning","chunks":1,"bytes":600,"verified_secrets":0,"unverified_secrets":0,"scan_duration":"72.9861ms"}
+
+    parser:
+      command: |
+        'C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070\python3.exe' 'C:\Users\priya\AppData\Local\trunk\plugins\https---github-com-trunk-io-plugins\v1.4.4-4ebadccd80b22638/linters/trufflehog/trufflehog_to_sarif.py'
+      stdin_path: (none)
+      run_from: E:\projects\codecure\
+      timeout: 10m
+      rerun: (cd E:\projects\codecure\; env -i 'Path=C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\priya\Downloads\flutter_windows_2.8.1-stable\flutter\bin;C:\Users\priya\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\mongosh-1.10.6-win32-x64\bin;;C:\Program Files\Microsoft VS Code\bin;C:\Users\priya\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\priya\AppData\Local\Programs\Python\Python311\;C:\Program Files\Java\jre1.8.0_202\bin;C:\Users\priya\Downloads\flutter_windows_2.8.1-stable\flutter\bin;C:\Program Files\Java\jdk1.8.0_202\bin;E:\MinGW\lib;C:\Users\priya\AppData\Local\Microsoft\WindowsApps;C:\Users\priya\AppData\Roaming\npm;C:\Downloads\Microsoft VS Code\bin;C:\Users\priya\AppData\Local\Programs\mongosh\;C:\Program Files\MongoDB\Server\7.0\bin;;c:\Users\priya\.cache\trunk\launcher' 'VIRTUAL_ENV=C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827' PYTHONUTF8=1 'PATH=C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827/bin;C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827/Scripts;C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin;C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070;C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.5-c29a45b107cf25d7b295475a0fbe9827;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin' HOME= 'HOMEPATH=\Users\priya' 'SystemRoot=C:\WINDOWS' 'windir=C:\WINDOWS' 'APPDATA=C:\Users\priya\AppData\Roaming' 'LOCALAPPDATA=C:\Users\priya\AppData\Local' 'USERPROFILE=C:\Users\priya' 'TMP=C:\Users\priya\AppData\Local\Temp' 'TEMP=C:\Users\priya\AppData\Local\Temp' 'C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070\python3.exe' 'C:\Users\priya\AppData\Local\trunk\plugins\https---github-com-trunk-io-plugins\v1.4.4-4ebadccd80b22638/linters/trufflehog/trufflehog_to_sarif.py')
+      exit_status: timeout
+      exit_code: -1
+      stdout: |
+        {
+          "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+          "version": "2.1.0",
+          "runs": [
+            {
+              "results": []
+            }
+          ]
+        }
+
+      stderr: (none)

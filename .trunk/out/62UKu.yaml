@@ -1,0 +1,73 @@
+trunk_cli_version: 1.20.1
+title: checkov timed out after 906 seconds
+report:
+  - checkov timed out after 906 seconds
+  - linter:
+      command: |
+        'C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914/Scripts\checkov.cmd' -f components.json package-lock.json package.json -o sarif --output-file-path 'C:\Users\priya\AppData\Local\Temp\trunk\1wfuuyn\cNYYQx1kPzuO,' --soft-fail
+      stdin_path: (none)
+      run_from: E:\projects\codecure\.trunk\tmp\trunk\yudi3a1\
+      timeout: 10m
+      rerun: (cd E:\projects\codecure\.trunk\tmp\trunk\yudi3a1\; env -i PYTHONUTF8=1 'VIRTUAL_ENV=C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914' HOME= 'PATH=C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914/bin;C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914/Scripts;C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin;C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin' 'C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914/Scripts\checkov.cmd' -f components.json package-lock.json package.json -o sarif --output-file-path 'C:\Users\priya\AppData\Local\Temp\trunk\1wfuuyn\cNYYQx1kPzuO,' --soft-fail)
+      affects_cache:
+        []
+      direct_configs:
+        []
+      exit_status: timeout
+      exit_code: -1
+      stdout: (none)
+      stderr: |
+        2024-03-06 03:22:08,917 [MainThread  ] [WARNI]  Failed to get the checkov mappings and guidelines from https://api0.prismacloud.io/bridgecrew/api/v2/guidelines. Skips using BC_* IDs will not work.
+        Traceback (most recent call last):
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+            sock = connection.create_connection(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+            for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+          File "C:\Users\priya\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070\lib\socket.py", line 955, in getaddrinfo
+            for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+        socket.gaierror: [Errno 11001] getaddrinfo failed
+        
+        The above exception was the direct cause of the following exception:
+        
+        Traceback (most recent call last):
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 791, in urlopen
+            response = self._make_request(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 492, in _make_request
+            raise new_e
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+            self._validate_conn(conn)
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 1097, in _validate_conn
+            conn.connect()
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connection.py", line 611, in connect
+            self.sock = sock = self._new_conn()
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connection.py", line 210, in _new_conn
+            raise NameResolutionError(self.host, self, e) from e
+        urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000021A067D3AC0>: Failed to resolve 'api0.prismacloud.io' ([Errno 11001] getaddrinfo failed)
+        
+        The above exception was the direct cause of the following exception:
+        
+        Traceback (most recent call last):
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\checkov\common\bridgecrew\platform_integration.py", line 1179, in get_public_run_config
+            request = self.http.request("GET", self.guidelines_api_url, headers=headers)  # type:ignore[no-untyped-call]
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\_request_methods.py", line 110, in request
+            return self.request_encode_url(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\_request_methods.py", line 143, in request_encode_url
+            return self.urlopen(method, url, **extra_kw)
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+            response = conn.urlopen(method, u.request_uri, **kw)
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 875, in urlopen
+            return self.urlopen(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 875, in urlopen
+            return self.urlopen(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 875, in urlopen
+            return self.urlopen(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\connectionpool.py", line 845, in urlopen
+            retries = retries.increment(
+          File "C:\Users\priya\AppData\Local\trunk\tools\checkov\3.2.31-d8e8a4055b95b2df3a0682d7c8232914\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+            raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+        urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api0.prismacloud.io', port=443): Max retries exceeded with url: /bridgecrew/api/v2/guidelines (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021A067D3AC0>: Failed to resolve 'api0.prismacloud.io' ([Errno 11001] getaddrinfo failed)"))
+
+      tmpfile: |
+        {"$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json", "version": "2.1.0", "runs": [{"tool": {"driver": {"name": "Checkov", "version": "3.2.31", "informationUri": "https://checkov.io", "rules": [], "organization": "bridgecrew"}}, "results": []}]}
+    parser: |
+      (none)

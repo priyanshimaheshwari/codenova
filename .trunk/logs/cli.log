@@ -1,0 +1,10 @@
+[03-06 02:04:27] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-07 17:26:27] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-08 00:08:10] [upgrade.cc:226] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0
+[03-08 00:08:10] [upgrade.cc:226] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0
+[03-08 02:04:27] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-09 02:39:58] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-09 20:19:16] [upgrade.cc:226] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0
+[03-09 23:21:52] [upgrade.cc:226] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0
+[03-10 09:20:38] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-10 19:03:43] [upgrade.cc:226] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0

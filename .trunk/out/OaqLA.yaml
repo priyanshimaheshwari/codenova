@@ -1,0 +1,21 @@
+trunk_cli_version: 1.20.1
+title: trufflehog exited with exit_code=1
+report:
+  - trufflehog exited with exit_code=1
+  - linter:
+      command: |
+        'C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.4-5c040a70b5f75ccbc2197a352e9c46d6\trufflehog.exe' filesystem --json --fail --only-verified --no-update 'app\page.tsx'
+      stdin_path: (none)
+      run_from: E:\projects\codecure\.trunk\tmp\trunk\h5bbova\
+      timeout: 10m
+      rerun: (cd E:\projects\codecure\.trunk\tmp\trunk\h5bbova\; env -i 'PATH=C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.4-5c040a70b5f75ccbc2197a352e9c46d6;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.4-5c040a70b5f75ccbc2197a352e9c46d6;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\priya\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin' 'C:\Users\priya\AppData\Local\trunk\tools\trufflehog\3.68.4-5c040a70b5f75ccbc2197a352e9c46d6\trufflehog.exe' filesystem --json --fail --only-verified --no-update 'app\page.tsx')
+      affects_cache:
+        []
+      direct_configs:
+        []
+      exit_status: exited
+      exit_code: 1
+      stdout: (none)
+      stderr: (none)
+    parser: |
+      (none)

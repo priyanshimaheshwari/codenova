@@ -1,0 +1,35 @@
+[03-06 01:00:23] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 01:57:21] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:38:22] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:39:10] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:39:42] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:40:37] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:41:53] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:45:43] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:47:51] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 02:49:11] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 03:06:35] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 16:21:45] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-06 17:45:41] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-08 00:04:37] [submission_buffer.cc:110] diagnostics buffer 78: Submission failed: std::bad_alloc
+[03-08 00:04:37] [shared_server_context.hh:129] Message processing failed: std::bad_alloc
+[03-08 00:04:38] [sentry.cc:372] Trunk Internal Error
+---
+trunk_cli_version: 1.20.1
+title: Internal trunk error occurred. Please report this issue to us @ https://slack.trunk.io
+report:
+  - std::bad_alloc
+[03-08 16:35:57] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-09 02:33:52] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-09 02:40:13] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-09 04:03:31] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-09 04:03:32] [file_state.hh:53] Received empty text for file from file read file:///E%3A/projects/codecure/app/components/AboutCancer/Diag/Staging/page.tsx
+[03-09 04:03:32] [file_state.hh:53] Received empty text for file from file read file:///E%3A/projects/codecure/app/components/AboutCancer/Diag/Symptoms/page.tsx
+[03-09 04:03:32] [file_state.hh:53] Received empty text for file from file read file:///E%3A/projects/codecure/app/components/AboutCancer/Diag/Questions/page.tsx
+[03-09 04:03:32] [file_state.hh:53] Received empty text for file from file read file:///E%3A/projects/codecure/app/components/AboutCancer/Diag/Diagnosis/page.tsx
+[03-09 18:10:30] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-10 09:20:57] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-10 12:33:22] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-10 13:43:31] [login.cc:53] GetUserRequest failed with status 16: Invalid token received 
+[03-10 13:44:39] [submission_buffer.cc:110] diagnostics buffer 10: Submission failed: filesystem error: in __char_to_wide: Illegal byte sequence
+[03-10 13:44:39] [shared_server_context.hh:129] Message processing failed: filesystem error: in __char_to_wide: Illegal byte sequence
