@@ -2,12 +2,12 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='text-[#d0d2db] '>
-      <div className="bg-cover" style={{ backgroundImage: "url('/bg5.png')" }}>
+    <div className='text-[#00416a] bg-[#e4e5e6]'>
+      <div >
       <div className=''>
       
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <h3 className='my-4 font-bold text-4xl text-[#d0d2db] text-center '>About Us</h3>
+        <h3 className='my-4 font-bold text-4xl text-[#00416a] text-center  transition-transform transform hover:scale-110'>About Us</h3>
         <p className="text-lg mb-6">
        We are committed to transforming the landscape of cancer care in India. Our mission is to provide comprehensive support and resources to individuals facing the challenges of cancer diagnosis and treatment, empowering them to navigate their journey with confidence and ease.
       </p>

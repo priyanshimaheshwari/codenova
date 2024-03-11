@@ -1,37 +1,41 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Diag = () => {
   return (
-    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
+    <div className='w-full  h-full' style={{ backgroundImage: "url('/bg6.png')" }}>
+        
 
-    <div className="flex">
-        <div className="flex flex-col h-screen p-3  shadow w-60">
-            <div className="space-y-3">
-                <div className="flex items-center">
-                    <h2 className="text-lg font-bold text-blue-600 mt-14"><Link href='/'>Causes and Prevention</Link> </h2>
-                </div>
-                <div className="flex-1">
-                    <ul className="pt-2 pb-4 space-y-1 text-sm">
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                            
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Causes/Risk'>Risk Factors</Link> </span>
-                            
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Causes/Genetics'>Genetics</Link></span>
-                            
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Causes/Cancer'>Cancer Prevention Overview</Link></span>
-                            
-                        </li>
-                    </ul>
+        <div className="flex">
+            <div className="flex flex-col  p-3  shadow w-60 bg-blue-900 ">
+                <div className="space-y-3  ">
+                    <div className="flex items-center">
+                    <h2 className="text-lg font-bold text-blue-100 mt-14 transition-transform transform hover:scale-110 hover:shadow-xl "><Link href='/components/AboutCancer/Causes'>Causes and Prevention</Link> </h2>
+                    </div>
+                    <div className="flex-1">
+                        <ul className="pt-2 pb-4 space-y-1 text-sm">
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Causes/Risk'>Risk Factors</Link> </span>
+                                
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Causes/Genetics'>Genetics</Link></span>
+                                
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Causes/Cancer'>Cancer Prevention Overview</Link></span>
+                                
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+            <div className="max-w-2xl mx-auto p-6 ">
+            <Image src={'/cancer1.jpg'}  width={500} height={500} alt='cancer' className='rounded-xl  mr-40 transition-transform transform hover:scale-110 w-[800px] h-60 my-6'/>
             <h3 className="text-xl font-semibold mb-4">Cancer Prevention Overview</h3>
             <p>
                 Cancer prevention is action taken to lower the chance of getting cancer. In 2023, about 1.9 million people will be diagnosed with cancer in the United States. In addition to the physical problems and emotional distress caused by cancer, the high costs of care are also a burden to patients, their families, and to the public. By preventing cancer, the number of new cases of cancer is lowered, hopefully reducing the burden of cancer and the number of deaths caused by cancer.

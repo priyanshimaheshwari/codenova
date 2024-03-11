@@ -1,40 +1,47 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
-const Diag = () => {
-  return (
-    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
 
-        <div className="flex">
-            <div className="flex flex-col h-screen p-3  shadow w-60">
-                <div className="space-y-3">
+    
+    const Diag = () => {
+      return (
+        <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
+            
+    
+            <div className="flex">
+        <div className="flex flex-col  p-3  shadow w-60 bg-blue-900 ">
+            <div className="space-y-3  ">
                     <div className="flex items-center">
-                    <h2 className="text-lg font-bold text-blue-600 mt-14"><Link href='/'>Diagnosis and Staging</Link> </h2>
-                    </div>
-                    <div className="flex-1">
-                        <ul className="pt-2 pb-4 space-y-1 text-sm">
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                
-                                    <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Diag/Symptoms'>Symptoms</Link> </span>
-                                
-                            </li>
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Diag/Diagnosis'>Diagnosis</Link></span>
-                                
-                            </li>
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Diag/Staging'>Staging</Link></span>
-                            </li>
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Diag/Questions'>Questions to Ask About Your Cancer</Link></span>
-                            </li>
-                        </ul>
+                        <h2 className="text-lg font-bold text-blue-100 mt-14 transition-transform transform hover:scale-110 hover:shadow-xl "><Link href='/components/AboutCancer/Diag'>Diagnosis and Staging</Link> </h2>
+                        </div>
+                        <div className="flex-1">
+                            <ul className="pt-2 pb-4 space-y-1 text-sm">
+                                <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                    
+                                        <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Symptoms'>Symptoms</Link> </span>
+                                    
+                                </li>
+                                <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                    
+                                        <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Diagnosis'>Diagnosis</Link></span>
+                                    
+                                </li>
+                                <li className="flex items-center p-2 space-x-3 rounded-md">
+                                    
+                                        <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Staging'>Staging</Link></span>
+                                </li>
+                                <li className="flex items-center p-2 space-x-3 rounded-md ">
+                                    
+                                        <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Questions'>Questions to Ask About Your Cancer</Link></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold mb-4">Symptoms of Cancer</h2>
-            <img src="/symptoms-image.jpg" alt="Symptoms of Cancer" className="mb-4 rounded-lg shadow-md w-full" />
+            <div className="max-w-2xl mx-auto p-6  ">
+            <h2 className="text-2xl font-bold mb-4 text-center text-blue-900">Symptoms of Cancer</h2>
+            <Image src={'/symptoms.jpeg'}  width={500} height={500} alt='cancer' className='rounded-xl  mr-40 transition-transform transform hover:scale-110 w-[800px] h-60 my-6'/>
             <p className="mb-4">If you experience symptoms persisting for a couple of weeks, it's crucial to consult a doctor.</p>
             <p className="mb-4">Cancer can present with various symptoms, although frequently these symptoms are attributed to illness, injury, benign tumors, or other health issues. If symptoms persist beyond a few weeks, it's advisable to seek medical attention promptly to facilitate early diagnosis and treatment. It's important to note that cancer may not always cause pain, so it's wise not to wait until pain develops before seeing a doctor.</p>
             <p className="mb-4">To learn more about symptoms specific to particular types of cancer, refer to the list of PDQ® cancer treatment summaries for both adult and childhood cancers, each providing comprehensive information on symptoms associated with a specific cancer type.</p>

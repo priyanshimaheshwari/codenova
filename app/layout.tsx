@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SiChatbot } from "react-icons/si";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +19,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    
+      <body className={inter.className}><Navbar />
+      <div className="mb-0">
+        {children}
+      <div className="fixed bottom-20 right-20 flex justify-center items-center rounded-full bg-white shadow-md z-50 cursor-pointer w-16 h-16">
+          <SiChatbot size={40} />
+        </div>
+        
+        <Footer />
+        </div>
+       
+        </body>
       
-      <body className={inter.className}><Navbar />{children}</body>
     </html>
   );
 }

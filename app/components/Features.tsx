@@ -10,9 +10,9 @@ import chat from '/public/chat.png'
 
 const Features = () => {
   return (
-    <div>
+    <div className='bg-[#e4e5e6] '>
       <div> 
-  <p className='font-bold text-6xl text-center text-[#243a50] mt-6' >Services</p>
+  <p className='font-bold text-6xl text-center text-[#243a50] pt-6' >Services</p>
 
   <div className="col-span-4">
     <div className="relative">

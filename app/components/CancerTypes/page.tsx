@@ -2,99 +2,28 @@ import Link from "next/link";
 import React from "react";
 
 const page = () => {
+  const alphabetArray = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i));
+
   return (
-    <div className="w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100">
+    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
       <div className="font-bold text-xl ml-36">Cancer Types</div>
-      <p className="mt-6 ml-40 mb-4">
+      <p className="mt-6 ml-40 pb-4">
         Select a type of cancer to learn about treatment, causes and prevention,
         screening, and the latest research.
       </p>
       <div className="ml-40">
         <ul>
-          <Link
-            className="font-semibold pr-6 hover:underline hover:text-blue-600"
-            href="/components/CancerTypes/#a"
-          >
-            a
-          </Link>
-          <Link
-            className="font-semibold pr-6 hover:underline hover:text-blue-600"
-            href="/components/CancerTypes//#b"
-          >
-            b
-          </Link>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            c
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            d
-          </button>
-          <Link
-            className="font-semibold pr-6 hover:underline hover:text-blue-600"
-            href="/#e"
-          >
-            e
-          </Link>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            f
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            g
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            h
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            i
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            j
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            k
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            l
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            m
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            n
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            o
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            p
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            q
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            r
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            s
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            t
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            u
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            v
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            x
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            y
-          </button>
-          <button className="font-semibold pr-6 hover:underline hover:text-blue-600">
-            Z
-          </button>
+        {alphabetArray.map(letter => (
+        <Link
+          key={letter}
+          className="font-semibold px-2 py-2 mx-2 text-white hover:underline hover:text-blue-600 border-2 rounded-full"
+          href={`/components/CancerTypes/#${letter}`}
+        >
+          {letter.toUpperCase()}
+        </Link>
+         ))}
+          
+           
         </ul>
       </div>
       <div className="my-4 mx-40">
@@ -173,7 +102,7 @@ const page = () => {
         </ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">C</h2>
+        <h2 id="c" className="font-bold pl-20">C</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
             Carcinoma of Unknown Primary
@@ -236,7 +165,7 @@ const page = () => {
         </ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">D</h2>
+        <h2 id="d"  className="font-bold pl-20">D</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
             Ductal Carcinoma In Situ (DCIS) - see Breast Cancer
@@ -290,7 +219,7 @@ const page = () => {
         </ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">F</h2>
+        <h2 id="f"  className="font-bold pl-20">F</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
             Fallopian Tube Cancer
@@ -298,7 +227,7 @@ const page = () => {
         </ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">G</h2>
+        <h2 id="g"  className="font-bold pl-20">G</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
           Gallbladder Cancer
@@ -309,7 +238,7 @@ const page = () => {
         </ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">H</h2>
+        <h2 id="h"  className="font-bold pl-20">H</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
           Heart Tumors, Childhood </li>
@@ -318,7 +247,7 @@ const page = () => {
         </ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">I</h2>
+        <h2 id="i"  className="font-bold pl-20">I</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
           Intraocular Melanoma    </li>
@@ -326,7 +255,7 @@ const page = () => {
           Islet Cell Tumors, Pancreatic Neuroendocrine Tumors</li></ul>
       </div>
       <div className="my-4 mx-40">
-        <h2 className="font-bold pl-20">K</h2>
+        <h2 id="k"  className="font-bold pl-20">K</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">
 Kidney (Renal Cell) Cancer
@@ -480,7 +409,7 @@ Small Cell Lung Cancer
             Fallopian Tube Cancer
           </li>
         </ul>
-      </div><div className="my-4 mx-40">
+      </div><div className="py-4 mx-40">
         <h2 className="font-bold pl-20">F</h2>
         <ul className="text-blue-600 ">
           <li className="hover:text-black hover:underline pointer-cursor pb-2">

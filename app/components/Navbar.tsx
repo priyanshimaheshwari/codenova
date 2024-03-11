@@ -12,19 +12,19 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div className=''>
-      <div className='bg-[#3043b8]  text-center'>
+    <div className='bg-[#00416a] '>
+      <div className=''>
       
     </div>
-    <div className='w-full h-full bg-[#3043b8]'>
+    <div className='w-full h-full '>
     <div className=' flex justify-between  '>
         <p className='flex flex-col'>
-          <span className='font-bold text-blue-500 text-lg bg-[#d1d5d8] py-8 pl-10 pr-[398px]'><Link href='/'> Hopeful Heals</Link></span>
+          <span className='font-bold text-[#b1c0ca] text-lg ] py-8 pl-10 pr-[398px]'><Link href='/'> Hopeful Heals</Link></span>
         </p>
         <div className='pr-6'>
-          <p className='pt-2 font-bold text-2xl text-[#359be2]'>Fighting One Step At a Time.</p>
+          <p className='pt-2 font-bold text-2xl text-[#b1c0ca]'>Fighting One Step At a Time.</p>
         <DropdownMenu >
-  <DropdownMenuTrigger className='text-blue-600 hover:underline outline-none  text-white'>About Cancer</DropdownMenuTrigger>
+  <DropdownMenuTrigger className=' hover:underline outline-none  text-white'>About Cancer</DropdownMenuTrigger>
   <DropdownMenuContent >
     <DropdownMenuLabel>Explore About Cancer</DropdownMenuLabel>
     <DropdownMenuSeparator />
@@ -55,7 +55,7 @@ const Navbar = () => {
     <DropdownMenuItem className='hover:cursor-pointer'>Kidney (Renal Cell) Cancer</DropdownMenuItem>
     <DropdownMenuItem className='hover:cursor-pointer'>Breast Cancer</DropdownMenuItem>
     <DropdownMenuItem className='hover:cursor-pointer'>Lymphoma</DropdownMenuItem>
-    <DropdownMenuItem className='hover:cursor-pointer'>Lung Cancer</DropdownMenuItem>
+    <Link href="/components/CancerTypes/Lung" > <DropdownMenuItem className='hover:cursor-pointer'>Lung Cancer</DropdownMenuItem></Link>
     <DropdownMenuItem className='hover:cursor-pointer'>Brain Tumor</DropdownMenuItem>
     <Link href="/components/CancerTypes" ><DropdownMenuItem className='hover:cursor-pointer'>All Types</DropdownMenuItem></Link>
   </DropdownMenuContent>
@@ -63,7 +63,7 @@ const Navbar = () => {
 <button className=' text-white hover:underline pl-10'> Locate Hospitals</button> 
 <button className=' text-white hover:underline pl-10'> Medicines</button> 
 <button className=' text-white hover:underline pl-10'> About Us</button> 
-<button className=' bg-[#1d2970] text-[#359be2] p-2 rounded-lg ml-10'> Donate Now</button> 
+<button className=' bg-[#6e818d] text-[#dfeaf2] p-2 rounded-lg ml-10'> Donate Now</button> 
 </div>
 
 

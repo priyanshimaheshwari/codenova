@@ -1,40 +1,45 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Diag = () => {
   return (
-    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
+    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
+        
 
         <div className="flex">
-            <div className="flex flex-col h-screen p-3  shadow w-60">
-                <div className="space-y-3">
-                    <div className="flex items-center">
-                    <h2 className="text-lg font-bold text-blue-600 mt-14"><Link href='/'>Diagnosis and Staging</Link> </h2>
+        <div className="flex flex-col  p-3  shadow w-60 bg-blue-900 ">
+            <div className="space-y-3  ">
+                <div className="flex items-center">
+                    <h2 className="text-lg font-bold text-blue-100 mt-14 transition-transform transform hover:scale-110 hover:shadow-xl "><Link href='/components/AboutCancer/Diag'>Diagnosis and Staging</Link> </h2>
                     </div>
                     <div className="flex-1">
                         <ul className="pt-2 pb-4 space-y-1 text-sm">
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
                                 
-                                    <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Diag/Symptoms'>Symptoms</Link> </span>
-                                
-                            </li>
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Diag/Diagnosis'>Diagnosis</Link></span>
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Symptoms'>Symptoms</Link> </span>
                                 
                             </li>
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Diag/Staging'>Staging</Link></span>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Diagnosis'>Diagnosis</Link></span>
+                                
                             </li>
-                            <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Diag/Questions'>Questions to Ask About Your Cancer</Link></span>
+                            <li className="flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Staging'>Staging</Link></span>
+                            </li>
+                            <li className="flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Diag/Questions'>Questions to Ask About Your Cancer</Link></span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+        <div className="max-w-2xl mx-auto p-6 ">
             <h2 className="text-2xl font-semibold mb-4">How Cancer Is Diagnosed</h2>
-            <img src="/x-rays-image.jpg" alt="X-rays for cancer diagnosis" className="mb-4 rounded-lg shadow-md w-full" />
+            <Image src={'/diagnosis2.jpg'}  width={500} height={500} alt='cancer' className='rounded-xl  mr-40 transition-transform transform hover:scale-110 w-[800px] h-60 my-6'/>
             <p className="mb-4">If you exhibit symptoms or have screening test results indicating cancer, your doctor will investigate whether it's cancer-related or due to another cause. Diagnosing cancer typically involves multiple tests rather than a single one. Your doctor may begin by discussing your medical history, both personal and family, and conducting a physical examination. They may proceed to order laboratory tests, imaging scans, or other diagnostic procedures. In many cases, a biopsy is necessary to definitively confirm the presence of cancer.</p>
             <p className="mb-4">This page outlines common tests utilized in cancer diagnosis. Depending on your symptoms, additional tests may be required. For detailed insights into the diagnostic process for specific cancers, refer to the PDQ cancer treatment summaries for both adult and childhood cancers. These summaries provide comprehensive information and visuals of diagnostic tests and procedures specific to each cancer type.</p>
             <h2 className="text-2xl font-semibold mb-4">Lab Tests Used to Diagnose Cancer</h2>

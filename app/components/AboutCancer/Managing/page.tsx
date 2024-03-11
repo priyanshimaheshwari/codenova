@@ -1,9 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
 
 const ManagingCancerCare = () => {
     return (
-        <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
-        <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+        <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
+        <div className="max-w-2xl mx-auto p-6 ">
+        <Image src={'/managibg.jpeg'}  width={500} height={500} alt='cancer' className='rounded-xl  mr-40 transition-transform transform hover:scale-110 w-[800px] h-60 my-6'/>
             <h3 className="text-xl font-semibold mb-4">Managing Cancer Care</h3>
             <p>
                 No matter what decisions you make about your cancer care, know that support is always available to help you manage your care. This section includes information about health care services, insurance options, advance directives, and using trusted resources when seeking print and online sources of health information.

@@ -1,35 +1,37 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
+    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
+        
 
     <div className="flex">
-        <div className="flex flex-col h-screen p-3  shadow w-60">
-            <div className="space-y-3">
+        <div className="flex flex-col  p-3  shadow w-60 bg-blue-900 ">
+            <div className="space-y-3  ">
                 <div className="flex items-center">
-                    <h2 className="text-lg font-bold text-blue-600 mt-14">Understanding Cancer</h2>
+                    <h2 className="text-lg font-bold text-blue-100 mt-14 transition-transform transform hover:scale-110 hover:shadow-xl "><Link href='/'>Understanding Cancer</Link> </h2>
                 </div>
                 <div className="flex-1">
                     <ul className="pt-2 pb-4 space-y-1 text-sm">
                         <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
                             
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Understanding/What'>What is Cancer?</Link> </span>
+                                <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Understanding/What'>What is Cancer?</Link> </span>
                             
                         </li>
                         <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Understanding/Statistics'>Cancer Statistics</Link></span>
+                                <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Understanding/Statistics'>Cancer Statistics</Link></span>
                             
                         </li>
                         <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Understanding/Disparities'>Cancer Disparities</Link></span>
+                                <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Understanding/Disparities'>Cancer Disparities</Link></span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div>
+    <div>
       <div className="p-6 rounded-lg shadow-md">
     <h2 className="text-xl font-semibold mb-4">Cancer Statistics</h2>
     <p className="text-gray-700 mb-4">Cancer has a major impact on society in the United States and across the world. Cancer statistics describe what happens in large groups of people and provide a picture in time of the burden of cancer on society.</p>
@@ -39,7 +41,9 @@ const page = () => {
 </div>
 <div className="p-6  rounded-lg shadow-md">
     <h2 className="text-xl font-semibold mb-4">Statistics at a Glance: in India</h2>
-    <img src="https://example.com/your-image.jpg" alt="Statistics Image" className="mb-4 rounded-lg shadow-md w-full" />
+    <div className='flex'>
+        
+    <div>
     <p className="mb-4">Report of National Cancer Registry Programme 2020:</p>
     <ul className="list-disc pl-8 mb-4">
         <li>In 2020, there were an estimated 1.39 million new cancer cases in India.</li>
@@ -66,8 +70,9 @@ const page = () => {
     </ul>
     <p className="text-lg">These statistics highlight the significant burden of cancer in India and underscore the importance of prevention, early detection, and effective treatment. 🌟🎗️</p>
 </div>
-</div>
-</div>
+<div> <Image src={'/cancerstatistics.png'} alt='cancer' width={700} height={700} className='rounded-xl transition-transform transform hover:scale-110 ml-auto mr-40'/></div>
+</div></div>
+</div></div>
     </div>
   )
 }

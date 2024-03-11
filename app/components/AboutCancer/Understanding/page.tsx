@@ -1,29 +1,31 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Understanding = () => {
   return (
-    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
+    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
+        
 
         <div className="flex">
-            <div className="flex flex-col h-screen p-3  shadow w-60">
-                <div className="space-y-3">
+            <div className="flex flex-col  p-3  shadow w-60 bg-blue-900 ">
+                <div className="space-y-3  ">
                     <div className="flex items-center">
-                        <h2 className="text-lg font-bold text-blue-600 mt-14"><Link href='/'>Understanding Cancer</Link> </h2>
+                        <h2 className="text-lg font-bold text-blue-100 mt-14 transition-transform transform hover:scale-110 hover:shadow-xl "><Link href='/components/AboutCancer/Understanding'>Understanding Cancer</Link> </h2>
                     </div>
                     <div className="flex-1">
                         <ul className="pt-2 pb-4 space-y-1 text-sm">
                             <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
                                 
-                                    <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Understanding/What'>What is Cancer?</Link> </span>
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Understanding/What'>What is Cancer?</Link> </span>
                                 
                             </li>
                             <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Understanding/Statistics'>Cancer Statistics</Link></span>
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Understanding/Statistics'>Cancer Statistics</Link></span>
                                 
                             </li>
                             <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                    <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Understanding/Disparities'>Cancer Disparities</Link></span>
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Understanding/Disparities'>Cancer Disparities</Link></span>
                             </li>
                         </ul>
                     </div>
@@ -31,8 +33,12 @@ const Understanding = () => {
             </div>
             
             <div className='m-6'>
-                <h1 className='text-4xl font-bold p-8'>Understanding Cancer</h1>
-                <p className='p-4 text-lg'>
+                <div className='flex'>
+                <h1 className='text-6xl font-bold py-20 pl-20 text-blue-800 transition-transform transform hover:scale-110'>Understanding Cancer</h1>
+                <Image src={'/image2.jpg'} alt='cancer' width={300} height={300} className='rounded-xl ml-auto mr-40 transition-transform transform hover:scale-110'/>
+                </div>
+                
+                <p className='p-4 text-lg '>
                 Cancer is a complex disease characterized by abnormal cell growth caused by genetic changes. These changes disrupt the normal functioning of cells, leading to uncontrolled proliferation and potentially life-threatening consequences. Understanding the role of genetic alterations in cancer development is crucial for devising effective treatment strategies.
 </p>
 <p className='p-4 text-lg'>

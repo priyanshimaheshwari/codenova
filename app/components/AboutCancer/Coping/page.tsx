@@ -1,10 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
 
 const CopingWithCancer = () => {
     return (
-        <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
-        <div className="max-w-2xl mx-auto p-6  rounded-lg shadow-md">
-           
+        <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100' style={{ backgroundImage: "url('/bg6.png')" }}>
+        <div className="max-w-2xl mx-auto p-6  ">
+        <Image src={'/coping.png'}  width={500} height={500} alt='cancer' className='rounded-xl  mr-40 transition-transform transform hover:scale-110 w-[800px] h-60 my-6'/>
             <h3 className="text-xl font-semibold mb-4">Coping With Cancer</h3>
             <p>
                 Whether you've just been diagnosed with cancer, are undergoing treatment, or have a loved one affected by the disease, coping with cancer is a significant challenge. The symptoms, side effects, and emotional toll can impact your life in various ways. This section provides information and resources to help you navigate the complexities of living with cancer.

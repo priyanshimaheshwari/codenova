@@ -1,45 +1,53 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Diag = () => {
   return (
-    <div className='w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 via-white via-blue-50 to-blue-100'>
+    <div className='w-full  h-full' style={{ backgroundImage: "url('/bg6.png')" }}>
+        
 
-    <div className="flex">
-        <div className="flex flex-col h-screen p-3  shadow w-60">
-            <div className="space-y-3">
-                <div className="flex items-center">
-                    <h2 className="text-lg font-bold text-blue-600 mt-14"><Link href='/'>Advanced Cancer</Link> </h2>
-                </div>
-                <div className="flex-1">
-                    <ul className="pt-2 pb-4 space-y-1 text-sm">
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                            
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Advanced/Choices'>Choices for Care</Link> </span>
-                            
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Advanced/Talking'>Talking to Family & Friends</Link></span>
-                            
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline'><Link href='/components/AboutCancer/Advanced/Coping'>Coping with Your Feelings During Advanced Cancer</Link></span>
-                            
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Advanced/Future'>Making Future Plans with Advanced Cancer</Link></span>
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Advanced/Purpose'>Finding Purpose and Meaning with Advanced Cancer</Link></span>
-                        </li>
-                        <li className="rounded-sm flex items-center p-2 space-x-3 rounded-md">
-                                <span className='font-bold text-blue-600 hover:underline '><Link href='/components/AboutCancer/Advanced/Questions'>Questions to Ask Your Doctor about Advanced Cancer</Link></span>
-                        </li>
-                    </ul>
+        <div className="flex">
+            <div className="flex flex-col  p-3  shadow w-60 bg-blue-900 ">
+                <div className="space-y-3  ">
+                    <div className="flex items-center">
+                    <h2 className="text-lg font-bold text-blue-100 mt-14 transition-transform transform hover:scale-110 hover:shadow-xl "><Link href=' /components/AboutCancer/Advanced'>Advanced Cancer</Link> </h2>
+                    </div>
+                    <div className="flex-1">
+                        <ul className="pt-2 pb-4 space-y-1 text-sm">
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Advanced/Choices'>Choices for Care</Link> </span>
+                                
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Advanced/Talking'>Talking to Family & Friends</Link></span>
+                                
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Advanced/Coping'>Coping with Your Feelings During Advanced Cancer</Link></span>
+                                
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Advanced/Future'>Making Future Plans with Advanced Cancer</Link></span>
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Advanced/Purpose'>Finding Purpose and Meaning with Advanced Cancer</Link></span>
+                            </li>
+                            <li className=" flex items-center p-2 space-x-3 rounded-md">
+                                
+                                    <span className='font-bold text-blue-100 hover:underline transition-transform transform hover:scale-110 hover:shadow-lg'><Link href='/components/AboutCancer/Advanced/Questions'>Questions to Ask Your Doctor about Advanced Cancer</Link></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+            <div className="max-w-2xl mx-auto p-6 ">
+            <Image src={'/future.jpg'}  width={500} height={500} alt='cancer' className='rounded-xl  mr-40 transition-transform transform hover:scale-110 w-[800px] h-60 my-6'/>
             <h3 className="text-xl font-semibold mb-2">Making Future Plans with Advanced Cancer</h3>
             <p>
                 Thinking about the future can feel stressful, but there comes a time when it’s helpful to make certain decisions. Careful planning reduces the financial, legal, and emotional burdens your family will face after you're gone. For many people, it's hard bringing up these subjects. But talking about them now can avoid problems later.
